@@ -174,3 +174,37 @@ form{
 }
 
 // end Search
+
+// Start Features
+
+.features__inner{
+    padding: 185px 0 120px;
+    display: flex;
+    justify-content: space-around;
+    &-item{
+        padding: 40px 30px 45px;
+        margin: 0 15px;
+        min-width: 360px;
+        text-align: center;
+        transition: all 1s;
+
+        &-title{
+            margin-top: 33px;
+            font-size: 24px;
+            color: #010101;
+        }
+        &-text{
+            margin-top: 15px;
+            font-size: 16px;
+            line-height: 30px;
+            color: #555555;
+
+        }
+    }
+    &-item:hover{
+        border-radius: 4px;
+        box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);     
+    }
+}
+
+// end Features
