@@ -208,3 +208,170 @@ form{
 }
 
 // end Features
+
+// Start Products
+
+.new-products{
+    padding: 120px 0;
+    background-color: $bglb;
+}
+.products__inner{
+
+
+    &-wrapper{
+        min-height: 110px;
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &-title{
+        font-size: 30px;
+    }
+    &-btns{
+        height: 92px;
+        box-shadow: 0px 1px 2px 0px rgba(90, 93, 100, 0.1);
+        border-radius: 4px;
+        background-color: #fff;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+}
+.btns__wrapper button{
+    
+    border: none;
+    background-color: #f1f3f6;
+    color: #747b86;
+    padding: 8px 20px;
+    border-radius: 17px;
+    cursor: pointer;
+    &+button{
+        margin-left: 8px;
+    }
+}
+
+.product__item{
+    max-width: 360px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+    &-img{
+        min-height: 230px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+    }
+    &-content{
+        padding: 28px 28px 30px;
+        border-bottom: 1px solid #ececec;
+    }
+    &-title{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    &-author{
+        display: flex;
+        align-items: center;
+        margin-bottom: 26px;
+        .author{
+            display: flex;
+            align-items: center;
+            margin-right: 18px;
+            .avatar{
+                height: 28px;
+                width: 28px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin-right: 6px;
+            }
+        }
+        .category{
+            display: flex;
+            align-items: center;
+            &-icon{
+                height: 15px;
+                width: 15px;
+                display: inline-block;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin-right: 8px;
+            }
+            span{
+                color: #7347c1;
+            }
+        }
+        
+    }
+    &-text{
+        color: #555555;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    &-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px;
+        &-main{
+            display: flex;
+            align-items: center;
+        }
+        .item__price{
+            width: 60px;
+            height: 30px;
+            border-radius: 15px;
+            text-align: center;
+            padding: 7px 13px 7px;
+            background-color: rgba(6, 116, 236, .102);
+            color: $blue;
+            font-weight: 500;
+            margin-right: 15px;
+        }
+        .item__likes{
+            color: #6f7d8d;
+            padding-left: 22px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url(../images/icons/heart.png);
+                height: 14px;
+                width: 16px;
+            }
+        }
+        .item__orders{
+            color: $blue;
+            padding-left: 25px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url(../images/icons/cart.png);
+                height: 14px;
+                width: 14px;
+            }
+        }
+    }
+}
+
+  
+
+  
