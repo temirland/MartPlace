@@ -449,3 +449,52 @@ form{
 }
 
 // end Followers
+
+// start Achievements
+
+.achievements{
+    background-color: #212225;
+}
+
+.achievments__inner{
+    padding: 95px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.achievement__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-icon{
+        margin-bottom: 40px;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    &-number{
+        font-size: 36px;
+        margin-bottom: 14px;
+    }
+    .item-sold &-number{
+        color: #feb71d;
+    }
+    .item-sale &-number{
+        color: #58c9e9;
+    }
+    .item-happy &-number{
+        color: #77de51;
+    }
+    .item-members &-number{
+        color: #ff6a6d;
+    }
+    &-text{
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+// end Achievements
