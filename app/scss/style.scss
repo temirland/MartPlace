@@ -197,7 +197,7 @@ form{
             margin-top: 15px;
             font-size: 16px;
             line-height: 30px;
-            color: #555555;
+            color: $text-gray;
 
         }
     }
@@ -330,7 +330,7 @@ form{
         
     }
     &-text{
-        color: #555555;
+        color: $text-gray;
         font-size: 16px;
         line-height: 30px;
     }
@@ -518,6 +518,7 @@ form{
         line-height: 30px;
         max-width: 685px;
         margin-bottom: 55px;
+        color: $text-gray;
     }
 }
 
@@ -556,6 +557,7 @@ form{
         font-size: 16px;
         line-height: 30px;
         padding: 0 24px;
+        color: $text-gray;
     }
 }
 
@@ -610,16 +612,97 @@ form{
     }
 }
 
-.Rectangle_237 {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    left: 385px;
-    top: 7062px;
-    width: 190px;
-    height: 55px;
-    z-index: 216;
-  }
+
   
 
 // end two-action
+
+// Start Feedback
+
+.feedback{
+    padding: 110px 0 120px;
+    &__title{
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+        span{
+            color: $blue;
+        }
+    }
+    &__text{
+        font-size: 16px;
+        color: $text-gray;
+        margin-bottom: 60px;
+        max-width: 690px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+.feedback__inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback__item{
+    max-width: 555px;
+    min-height: 315px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    padding: 50px 40px;
+    position: relative;
+    border-left: 2px solid $blue;
+    margin-bottom: 60px;
+    &-icon{
+        position: absolute;
+        top: 55px;
+        right: 40px;
+    }
+    &-user{
+        display: flex;
+        align-items: center;
+        margin-bottom: 26px;
+        .avatar{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 15px;
+        }
+
+    }
+    .name{
+        font-weight: 500;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    .occupation{
+        color: $text-gray;
+        font-size: 16px;
+    }
+    &-text{
+        font-size: 16px;
+        line-height: 30px;
+        color: $text-gray;
+    }
+   
+}
+
+.feedback__btn{
+    text-align: center;
+}
+
+.feedback__btn a{
+    padding: 19px 35px;
+    font-size: 16px;
+    background-color:  $blue;
+    color: #fff;
+    border-radius: 28px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+// end Feedback
