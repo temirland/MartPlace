@@ -1,4 +1,4 @@
 $(function(){
 
-    // var mixer = mixitup('.products__inner-box');
+    var mixer = mixitup('.products__inner-box');
 });
