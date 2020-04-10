@@ -402,3 +402,50 @@ form{
 
 // end Products
   
+// Start Followers
+
+.followers{
+    background-color: $bggr;
+}
+
+.followers__inner{
+    padding: 120px 0;
+    position: relative;
+
+}
+
+
+.title-plate{
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.slider-arrows{
+    display: flex;
+    border-radius: 23px;
+    height: 45px; 
+    width: 110px;
+    background-color: $blue;
+
+}
+
+.prev-slide{
+    width: 55px;
+    border-radius: 23px 0 0 23px;
+}
+
+.next-slide{
+    width: 55px;
+    border-radius: 0 23px 23px 0;
+}
+.prev-slide,
+.next-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & img{
+        width: 8px;
+        height: 14px;
+    }
+}
+
+// end Followers
