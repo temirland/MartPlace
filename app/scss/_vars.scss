@@ -1,9 +1,22 @@
 $white: #eef1f3;
-$blue: #0674ec;
+
 $dg: #333333;
 $gray: #d9dfe5;
-
 $bglb: #f6f7fb;
 $bggr: #eff1f5;
 
-$text-gray: #555555;
+
+
+$blue: #0674ec;
+$text: #555555;
+
+@mixin text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+}
+
+@mixin header {
+    font-size: 36px;
+    color: #000;
+}
